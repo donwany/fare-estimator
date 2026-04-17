@@ -1,0 +1,19 @@
+[project]
+name = "fare-client"
+version = "0.2.0"
+description = "Ride Fare Calculator Client"
+readme = "README.md"
+authors = [
+    { name = "hardtanh", email = "tsiameh@hardtanh.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "argparse>=1.4.0",
+]
+
+[project.scripts]
+fare-client = "fare_client.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.11.1,<0.12.0"]
+build-backend = "uv_build"
